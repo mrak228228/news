@@ -28,6 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 AUTH_USER_MODEL = "accounts.CustomUser"
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 LOGOUT_REDIRECT_URL = "home"
 LOGIN_REDIRECT_URL = "home"
 
@@ -35,6 +38,9 @@ LOGIN_REDIRECT_URL = "home"
 # Application definition
 
 INSTALLED_APPS = [
+    "crispy_bootstrap5",
+    "crispy_forms", 
+    "pages",
     "accounts",
     "django.contrib.admin",
     "django.contrib.auth",
