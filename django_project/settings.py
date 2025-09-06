@@ -40,6 +40,7 @@ LOGIN_REDIRECT_URL = "home"
 # Application definition
 
 INSTALLED_APPS = [
+    "articles",
     "crispy_bootstrap5",
     "crispy_forms", 
     "pages",
@@ -51,6 +52,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+
+TIME_ZONE = "America/New_York"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
